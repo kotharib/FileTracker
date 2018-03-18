@@ -15,7 +15,7 @@ This project will return you the below statistics in a csv file.
 To run the console application you need two parameters i.e. the folder path and the target csv file path
 
 # Syntax: 
-GetFileStats <folder_path> <target_csv_file_path>
+GetFolderStats <folder_path> <target_csv_file_path>
 
 # For e.g 
 GetFolderStats  "C:\Test" "C:\Output.csv"
