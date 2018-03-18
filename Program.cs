@@ -29,24 +29,28 @@ namespace FileTracker
 
             if (!fileService.IsFolderExists()) {
                 Console.WriteLine("The folder path seems to be invalid or does not exist.");
+                Console.Read();
                 return;
             }
 
             if (!fileService.IsFolderAccessible())
             {
                 Console.WriteLine("The folder path seems to be inaccessible or you dont have adequate permissions.");
+                Console.Read();
                 return;
             }
 
             if (!csvWriter.IsValidCsvFile())
             {
                 Console.WriteLine("The Output file is not a valid csv filename");
+                Console.Read();
                 return;
             }
 
             if (csvWriter.IsFileinUse())
             {
                 Console.WriteLine("The target file is under use or under process.");
+                Console.Read();
                 return;
             }
 

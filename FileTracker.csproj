@@ -7,7 +7,7 @@
     <ProjectGuid>{9D04B5D1-5661-4C88-86E4-AAC3754B858D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>FileTracker</RootNamespace>
-    <AssemblyName>GetFileStatistics</AssemblyName>
+    <AssemblyName>GetFolderStats</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
