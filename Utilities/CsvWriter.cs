@@ -27,6 +27,7 @@ namespace FileTracker.Utilities
             FileStream stream = null;
             try
             {
+                if (!File.Exists(_csvFilePath)) return false;
                 stream = file.Open(FileMode.Open, FileAccess.ReadWrite, FileShare.None);
             }
             catch (IOException)
@@ -63,7 +64,7 @@ namespace FileTracker.Utilities
         /// </summary>
         /// <param name="columns"></param>
         /// <param name="delimiter"></param>
-            public void WriteRow(List<string> columns, string delimiter)
+        public void WriteRow(List<string> columns, string delimiter)
         {
             if (columns == null)
                 throw new ArgumentNullException("columns");

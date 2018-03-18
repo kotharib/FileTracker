@@ -16,4 +16,7 @@
   <PropertyGroup>
     <EnableSecurityDebugging>false</EnableSecurityDebugging>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <StartArguments>"D:\IELTS imp" "H:\Output.csv"</StartArguments>
+  </PropertyGroup>
 </Project>
