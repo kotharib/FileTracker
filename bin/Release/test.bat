@@ -1,1 +1,0 @@
-GetFileStatistics "D:\IELTS imp" "H:\Output.csv"
